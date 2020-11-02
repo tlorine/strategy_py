@@ -3,6 +3,7 @@ import map_info
 import game_config
 import event_const
 
+
 class StaticObj(pygame.sprite.Sprite):
     act = 0
 
