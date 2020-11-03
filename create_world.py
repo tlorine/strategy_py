@@ -42,13 +42,15 @@ class StaticWorld:
                 if game_map["map"][y][x] == map_info.Id.SEA:
                     new_sprite = StaticObj(x * game_config.DEFAULT_SCALE, y * game_config.DEFAULT_SCALE, color=map_info.Colors.SEA)
                 elif game_map["map"][y][x] == map_info.Id.DESERT:
-                    new_sprite = StaticObj(x * game_config.DEFAULT_SCALE, y * game_config.DEFAULT_SCALE, color=map_info.Colors.DESET)
+                    new_sprite = StaticObj(x * game_config.DEFAULT_SCALE, y * game_config.DEFAULT_SCALE, color=map_info.Colors.DESERT)
                 elif game_map["map"][y][x] == map_info.Id.FOREST:
                     new_sprite = StaticObj(x * game_config.DEFAULT_SCALE, y * game_config.DEFAULT_SCALE, color=map_info.Colors.FOREST)
                 elif game_map["map"][y][x] == map_info.Id.CITY:
                     new_sprite = StaticObj(x * game_config.DEFAULT_SCALE, y * game_config.DEFAULT_SCALE, color=map_info.Colors.CITY)
                 elif game_map["map"][y][x] == map_info.Id.STEPPE:
                     new_sprite = StaticObj(x * game_config.DEFAULT_SCALE, y * game_config.DEFAULT_SCALE, color=map_info.Colors.STEPPE)
+                elif game_map["map"][y][x] == map_info.Id.TUNDA:
+                     new_sprite = StaticObj(x * game_config.DEFAULT_SCALE, y * game_config.DEFAULT_SCALE, color=map_info.Colors.TUNDA)
                 else:
                     print(game_map["map"][y][x])
                     exit(1)

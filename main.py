@@ -8,7 +8,7 @@ def game_run():
     screen = pygame.display.set_mode(game_config.WINDOW_SIZE)
     running = True
 
-    game_map = map_reader.load_map("test.json")
+    game_map = map_reader.load_map("test_map.json")
     world = StaticWorld(game_map)
     while running:
         screen.fill((255, 255, 255))
